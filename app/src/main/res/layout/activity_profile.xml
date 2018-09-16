@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="ba.kalishop.kalishop.ProfileActivity">
+
+
+    <include
+        layout="@layout/app_bar_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+                 <Button
+            android:id="@+id/cancel"
+            android:text="X"
+            android:layout_height="match_parent"
+            android:layout_width="90px"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/confirm"
+            android:text=" ✓"
+            android:layout_height="match_parent"
+            android:layout_width="90px"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:textSize="20dp"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/nameP"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="First Name"
+        android:layout_marginTop="90dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorPrimary"
+        />
+
+
+    <EditText
+        android:id="@+id/firstnameProfile"
+        android:hint="First Name"
+        android:layout_below="@+id/nameP"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorGrey"
+
+        />
+
+    <TextView
+        android:id="@+id/lastnameP"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Last Name"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/firstnameProfile"
+        />
+    <EditText
+        android:id="@+id/lastnameProfile"
+        android:hint="Last Name"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/lastnameP"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorGrey"
+        />
+    <TextView
+        android:id="@+id/usernameP"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Username"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/lastnameProfile"
+        />
+    <EditText
+        android:id="@+id/usernameProfile"
+        android:hint="Username"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/usernameP"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorGrey"
+        />
+    <TextView
+        android:id="@+id/passwordP"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Password"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/usernameProfile"
+        />
+    <EditText
+        android:id="@+id/passwordProfile"
+        android:hint="Password"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/passwordP"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorGrey"
+        />
+    <TextView
+        android:id="@+id/emailP"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="Email"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@+id/passwordProfile"
+        />
+
+    <EditText
+        android:id="@+id/emailProfile"
+        android:hint="Email"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/emailP"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/colorGrey"
+        />
+</RelativeLayout>
