@@ -1,5 +1,6 @@
 package ba.kalishop.kalishop;
 
+import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -53,6 +54,10 @@ public class ProductsActivity extends AppCompatActivity
     private Button menuButton;
     private ApiInterface apiInterface;
     private List<ba.kalishop.kalishop.Model.Product> lista;
+
+
+
+
 
 
     @Override
@@ -109,6 +114,9 @@ public class ProductsActivity extends AppCompatActivity
         //}
 
 
+
+
+
     }
 
 
@@ -127,6 +135,7 @@ public class ProductsActivity extends AppCompatActivity
     public boolean onCreateOptionsMenu(Menu menu) {//menu activity
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu, menu);
+
         //ovo ispod sad dodala sve to return
         SharedPreferences sp1=getSharedPreferences ("Login",0);
 
@@ -152,6 +161,14 @@ public class ProductsActivity extends AppCompatActivity
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
             return true;
+        }
+        if(id==R.id.action_cart){
+
+            Intent i=new Intent(ProductsActivity.this,InCartActivity.class);//ovdje trebam izmijeniti na incart da otvara al puca mi nešto oj a nije pucalo
+
+            startActivity(i);
+            finish();
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -265,6 +282,7 @@ public class ProductsActivity extends AppCompatActivity
 
 
                 }
+                adapter.notifyDataSetChanged();
 
 
             }

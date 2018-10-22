@@ -286,6 +286,14 @@ public class ProductDetailsActivity extends AppCompatActivity
         if (id == R.id.action_settings) {
             return true;
         }
+        if(id==R.id.action_cart){
+
+            Intent i=new Intent(ProductDetailsActivity.this,InCartActivity.class);//ovdje trebam izmijeniti na incart da otvara al puca mi nešto oj a nije pucalo
+
+            startActivity(i);
+            finish();
+
+        }
 
         return super.onOptionsItemSelected(item);
     }

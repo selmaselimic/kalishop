@@ -263,6 +263,7 @@ public void onBackPressed() {//menu activity
                     productList.add(s);
 
                 }
+                        adapter.notifyDataSetChanged();
                         p.add(productList.get(0));
                         for(int s=1;s< productList.size();s++){
                             if(productList.get(s).getInCarHistorytId()!=productList.get(s-1).getInCarHistorytId()){
